@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Alle's survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="header">
+        <h1 id="title" class="text-center">Alle's Survey</h1>
+        <p id="description" class="description text-center">
+          Hello! Thank you for visiting my page. Let me know more about you!
+        </p>
+      </header>
+
+      <!-- form -->
+
+      <!-- personal info -->
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="name"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number" placeholder="Age"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="13"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <!-- role -->
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="PreferNo">Prefer Not To Say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- recommendation -->
+        <div class="form-group">
+          <p>Would you recommend my site?</p>
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              checked
+            />
+            Definitely
+          </label>
+
+          <label>
+            <input type="radio" name="user-recommend" value="maybe" checked />
+            Maybe
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="user-recommend"
+              value="not-sure"
+              checked
+            />
+            Not sure
+          </label>
+
+          <label>
+            <input type="radio" name="user-recommend" value="No" checked />
+            No
+          </label>
+        </div>
+
+        <!-- Favorite Feature -->
+        <div class="form-group">
+          <p>What is your favorite feature of this website?</p>
+          <select name="mostLike" id="most-like" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="design">I really like the design.</option>
+            <option value="community">The community is very nice!</option>
+            <option value="dontknow">
+              I don't know, I still have to find out..
+            </option>
+          </select>
+        </div>
+
+        <!-- Improvement -->
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input type="checkbox" name="prefer" value="stories" />More posts!
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="songs"
+              class="input-checkbox"
+            />Recommend more songs.
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="interactions-with-readers"
+              class="input-checkbox"
+            />More interactions with readers.
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="monthly-events"
+              class="input-checkbox"
+            />Monthly events!
+          </label>
+
+          <label>
+            <input type="checkbox" name="prefer" value="meetups" />City Meetups!
+          </label>
+
+          <label>
+            <input type="checkbox" name="prefer" value="other" />Other?
+          </label>
+        </div>
+
+        <!-- Comment -->
+        <div class="form-group">
+          <p>Any other suggestions?</p>
+          <textarea
+            name="comment"
+            placeholder="Write your comment here.."
+            id="comments"
+            class="input-textarea"
+          ></textarea>
+        </div>
+
+        <!-- submit -->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
