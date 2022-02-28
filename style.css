@@ -35,6 +35,7 @@ body::before {
   z-index: -1;
   background-size: cover;
   background-position: center;
+  background-attachment:fixed;
 }
 h1 {
   font-weight: 400;
